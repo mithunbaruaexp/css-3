@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+    <style>
+        @keyframes sliding {
+            0%{
+                top: 0;
+                left: 0px;
+                
+            }
+            10%{
+             
+
+            }
+            20%{
+                top: 600px;
+                
+            }
+            30%{
+                left: 1010px;
+              
+              
+               
+
+            }
+            40%{
+                
+
+            }
+            50%{
+                left: 500px;
+                top: 300px;
+                
+
+            }
+            60%{
+                left: 0;
+                top:0;
+               
+
+            }
+          
+         
+           70%{  
+              
+            top: 600px;
+
+            }
+           80%{
+               top: 0px;
+          
+
+
+            }
+           90%{
+            top: 600px;
+
+            }
+           100%{
+            top: 0;
+                left: 1100px;
+
+            }
+        }
+        @keyframes jumbo {
+            0%{
+                background:#1E1E1E ;
+            }
+            25%{
+                background: #1E1E1E;
+            }
+            75%{
+                background: #1E1E1E;
+            }
+           80%{
+            background: url(img/home_town_at_night-wallpaper-2800x2100.jpg);
+               background-size: cover;
+            }
+            85%{
+                background: url(img/home_town_at_night-wallpaper-2800x2100.jpg);
+               background-size: cover;
+            }
+           100%{
+               background: url(img/home_town_at_night-wallpaper-2800x2100.jpg);
+               background-size: cover;
+            }
+        }
+        .container{
+            animation: jumbo 4s ease-in-out .5s infinite alternate ;
+            animation-play-state: running;
+            
+            background: lightblue;
+            height: 500px;
+            width: 1000px;
+        }
+        .ball{
+            position: relative;
+            
+            
+          
+            animation: sliding 4s ease-in-out .5s infinite alternate ;
+            animation-play-state: running;
+            height: 100px;
+            width: 100px;
+         
+          
+        }
+        p{
+            font-size: 50px;
+            font-weight: 700;
+            color: red;
+            margin: 10px 0 0 0;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>let's explore the animation</h1>
+
+    <div class="container">
+        <div class="ball">
+            <img width="200px" src="img/ufo.png" alt="">
+            <!-- <p>Mithun</p> -->
+        </div>
+    </div>
+    
+</body>
+</html>
